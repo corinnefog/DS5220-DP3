@@ -111,13 +111,15 @@ The `/plot` resource uses the "render on write" pattern — the ingest Lambda ge
 ## Repository Structure
 
 ```
-nyt-books/
+DS5220-DP3/
 ├── README.md
 ├── ingest/
-│   └── lambda_function.py      # Ingest Lambda with backfill and plot generation
+│   ├── lambda_function.py
+│   └── requirements.txt
 └── api/
-    ├── app.py                   # Chalice routes: /, /current, /trend, /plot
+    ├── app.py
     ├── requirements.txt
+    ├── .gitignore
     └── .chalice/
         ├── config.json
         └── policy-dev.json
